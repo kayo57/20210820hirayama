@@ -1,0 +1,79 @@
+/* 以下の内容を追加します */
+
+body {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 20px;
+  color: #00008b;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+}
+
+.tag {
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  color: #00008b;
+  margin: 10px;
+}
+
+.tag1 {
+  padding: 10px;
+}
+
+.tag2 {
+  padding: 10px;
+}
+
+.tag3 {
+  padding: 10px;
+}
+
+.tag4 {
+  padding: 10px;
+}
+
+/*  親要素 */
+.card__img {
+  /*  main-titleを固定するための指定  */
+  position: relative;
+  width: 100%;
+  /* 画像の右寄せ */
+  text-align: right;
+}
+.card__img img {
+  margin-top: 50px;
+  width: 50%;
+}
+
+/* 毎日を笑顔に */
+.main-title {
+  /*親要素を基準に下側に配置 */
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  /* 画像の下に表示するための指定 */
+  z-index: -1;
+  }
+
+.main-title .text {
+  font-size: 3rem;
+  margin-bottom: 0;
+  text-align: left;
+}
+/* 青い四角 */
+.main-title .itembox {
+  display: block;
+  background-color: #00008b;
+  height: 130px;
+  width: 80%;
+}
